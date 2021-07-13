@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-13, 6.75) {$(A\otimes{I})\otimes{B}$};
+		\node [style=none] (1) at (-9.25, 6.75) {};
+		\node [style=none] (3) at (-10.5, 7.5) {$a_{A, I, B}$};
+		\node [style=none] (4) at (-8, 6.75) {$A\otimes{({I}\otimes{B})}$};
+		\node [style=none] (5) at (-10.75, 3.75) {};
+		\node [style=none] (6) at (-10.75, 3.75) {${A}\otimes{B}$};
+		\node [style=none] (7) at (-13.5, 5) {${u^{R}_{A}\otimes{1_{B}}}$};
+		\node [style=none] (8) at (-8, 5) {$1_{A}\otimes{{u}^{L}_{B}}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw (0.center) to (6.center);
+		\draw (6.center) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
